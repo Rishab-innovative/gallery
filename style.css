@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 2rem;
+    position: relative;
+}
+
+#img-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.8rem;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+
+img:hover {
+    cursor: pointer;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.popup-container {
+    position: absolute;
+    padding: 0.5rem;
+    height: 50vh;
+    width: 45vw;
+    top: 25%;
+    left: 28%;
+    background-color: white;
+    display: none;
+    z-index: 5;
+}
+
+#shadow {
+    background-color: rgba(128, 128, 128, 0.716);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.popModal {
+    height: 90%;
+}
+
+
+.text {
+    height: 10%;
+    position: relative;
+    color: rgb(96, 150, 197);
+    margin-top: 0.5rem;
+}
+
+#prev {
+    position: absolute;
+    left: 0;
+}
+
+#next {
+    position: absolute;
+    right: 0;
+}
+
+.text P:hover {
+    cursor: pointer
+}
