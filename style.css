@@ -74,3 +74,84 @@ img:hover {
 .text P:hover {
     cursor: pointer
 }
+
+@media screen and (max-width:768px) {
+    .popup-container {
+        height: 40vh;
+        top: 15%;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .popup-container {
+        height: 35vh;
+        top: 12%;
+        /* bottom: -50%; */
+    }
+
+    .text {
+        margin-top: 0.2rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .popup-container {
+        height: 35vh;
+        top: 15%;
+        /* bottom: -50%; */
+    }
+
+    .text {
+        margin-top: 0.2rem;
+    }
+
+    #img-container {
+        gap: 1rem;
+        height: 50vh;
+    }
+
+    .text p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    #img-container {
+        gap: 0.5rem;
+    }
+
+    .container {
+        padding: 0.5rem;
+    }
+
+    .popup-container {
+        width: 70vw;
+        left: 15%;
+        top: 12%;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .text p {
+        font-size: 1.5rem;
+    }
+
+    .popup-container {
+        /* left: 15%; */
+        top: 15%;
+    }
+
+    .text {
+        margin-top: 0.8rem;
+    }
+}
+
+@media screen and (min-width:2200px) {
+    .text p {
+        font-size: 2rem;
+    }
+
+    .text {
+        margin-top: 1rem;
+    }
+}
