@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 2rem;
+    position: relative;
+}
+
+#img-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.8rem;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+}
+
+
+img:hover {
+    cursor: pointer;
+    box-shadow: 0px -25px 20px -20px rgba(0, 0, 0, 0.45), 25px 0 20px -20px rgba(0, 0, 0, 0.45), 0px 25px 20px -20px rgba(0, 0, 0, 0.45), -25px 0 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+.popup-container {
+    position: absolute;
+    padding: 0.5rem;
+    height: 50vh;
+    width: 45vw;
+    top: 25%;
+    left: 28%;
+    background-color: white;
+    display: none;
+    z-index: 5;
+}
+
+#shadow {
+    background-color: rgba(128, 128, 128, 0.716);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: none;
+}
+
+.popModal {
+    height: 90%;
+}
+
+
+.text {
+    height: 10%;
+    position: relative;
+    color: rgb(96, 150, 197);
+    margin-top: 0.5rem;
+}
+
+#prev {
+    position: absolute;
+    left: 0;
+}
+
+#next {
+    position: absolute;
+    right: 0;
+}
+
+.text P:hover {
+    cursor: pointer
+}
+
+@media screen and (max-width:768px) {
+    .popup-container {
+        height: 40vh;
+        top: 15%;
+    }
+}
+
+@media screen and (max-width:660px) {
+    .popup-container {
+        height: 35vh;
+        top: 12%;
+        /* bottom: -50%; */
+    }
+
+    .text {
+        margin-top: 0.2rem;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .popup-container {
+        height: 35vh;
+        top: 15%;
+        /* bottom: -50%; */
+    }
+
+    .text {
+        margin-top: 0.2rem;
+    }
+
+    #img-container {
+        gap: 1rem;
+        height: 50vh;
+    }
+
+    .text p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width:350px) {
+    #img-container {
+        gap: 0.5rem;
+    }
+
+    .container {
+        padding: 0.5rem;
+    }
+
+    .popup-container {
+        width: 70vw;
+        left: 15%;
+        top: 12%;
+    }
+}
+
+@media screen and (min-width:1600px) {
+    .text p {
+        font-size: 1.5rem;
+    }
+
+    .popup-container {
+        /* left: 15%; */
+        top: 15%;
+    }
+
+    .text {
+        margin-top: 0.8rem;
+    }
+}
+
+@media screen and (min-width:2200px) {
+    .text p {
+        font-size: 2rem;
+    }
+
+    .text {
+        margin-top: 1rem;
+    }
+}
